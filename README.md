@@ -6,7 +6,7 @@ Atualmente, a compra de passagens aéreas exige sistemas que organizem informaç
 Sem um sistema informatizado: O controle de assentos pode gerar overbooking (venda acima da capacidade), O registro manual de passageiros pode causar erros, A consulta de voos se torna lenta e desorganizada e
 não há controle eficiente do histórico de compras. Dessa forma, existe a necessidade de um sistema que permita organizar, automatizar e controlar o processo de venda de passagens aéreas, garantindo maior confiabilidade e agilidade.
 
-# Resumo da Solução
+# Resumo da Solucão 
 
 Um sistema web simples para venda de passagens aéreas.
 
