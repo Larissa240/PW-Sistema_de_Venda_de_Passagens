@@ -8,7 +8,7 @@ não há controle eficiente do histórico de compras. Dessa forma, existe a nece
 
 # Resumo da Solução
 
-A solução proposta é o desenvolvimento de um sistema web simples para venda de passagens aéreas.
+Um sistema web simples para venda de passagens aéreas.
 
 O sistema permitirá que:
 
