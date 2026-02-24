@@ -21,25 +21,25 @@ O sistema permitirá que:
 
 # Requisitos Funcionais (RF)
 
-RF01 – O sistema deve permitir o cadastro de usuário informando nome, e-mail e senha.
-RF02 – O sistema deve permitir que o usuário realize login utilizando e-mail e senha.
-RF03 – O sistema deve permitir que o usuário pesquise voos informando origem e destino.
-RF04 – O sistema deve exibir a lista de voos disponíveis conforme a pesquisa realizada.
-RF05 – O sistema deve permitir que o usuário visualize os detalhes do voo (data, preço e assentos disponíveis).
-RF06 – O sistema deve permitir que o usuário compre uma passagem.
-RF07 – O sistema deve atualizar automaticamente a quantidade de assentos disponíveis após a compra.
-RF08 – O sistema deve permitir que o usuário visualize o histórico de passagens compradas.
+- RF01 – O sistema deve permitir o cadastro de usuário informando nome, e-mail e senha.
+- RF02 – O sistema deve permitir que o usuário realize login utilizando e-mail e senha.
+- RF03 – O sistema deve permitir que o usuário pesquise voos informando origem e destino.
+- RF04 – O sistema deve exibir a lista de voos disponíveis conforme a pesquisa realizada.
+- RF05 – O sistema deve permitir que o usuário visualize os detalhes do voo (data, preço e assentos disponíveis).
+- RF06 – O sistema deve permitir que o usuário compre uma passagem.
+- RF07 – O sistema deve atualizar automaticamente a quantidade de assentos disponíveis após a compra.
+- RF08 – O sistema deve permitir que o usuário visualize o histórico de passagens compradas.
 
 # Requisitos Não Funcionais (RNF)
 
-RNF01 – O sistema deve ser acessível por meio de navegador web.
-RNF02 – O sistema deve possuir autenticação de usuários.
-RNF03 – O tempo de resposta das requisições deve ser inferior a 3 segundos.
-RNF04 – O sistema deve armazenar os dados em banco de dados relacional (MySQL).
-RNF05 – O sistema deve utilizar arquitetura baseada em API REST.
-RNF06 – O sistema deve possuir interface simples e intuitiva.
-RNF07 – O sistema deve garantir integridade dos dados através do uso de chaves primárias e estrangeiras.
-RNF08 – O código deve ser organizado em camadas (frontend, backend e banco de dados)
+- RNF01 – O sistema deve ser acessível por meio de navegador web.
+- RNF02 – O sistema deve possuir autenticação de usuários.
+- RNF03 – O tempo de resposta das requisições deve ser inferior a 3 segundos.
+- RNF04 – O sistema deve armazenar os dados em banco de dados relacional (MySQL).
+- RNF05 – O sistema deve utilizar arquitetura baseada em API REST.
+- RNF06 – O sistema deve possuir interface simples e intuitiva.
+- RNF07 – O sistema deve garantir integridade dos dados através do uso de chaves primárias e estrangeiras.
+- RNF08 – O código deve ser organizado em camadas (frontend, backend e banco de dados)
 
 
 # Tecnologias 
