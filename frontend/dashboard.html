@@ -3,7 +3,7 @@
 
 <head>
 <meta charset="UTF-8">
-<title>SkyFly - Passagens Aéreas</title>
+<title>Painel - SkyFly</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -14,9 +14,9 @@
 <div class="logo">✈ SkyFly</div>
 
 <nav>
-<a href="index.html">Home</a>
-<a href="#">Minhas Passagens</a>
-<a href="login.html">Login</a>
+<a href="dashboard.html">Buscar Voos</a>
+<a href="minhas-passagens.html">Minhas Passagens</a>
+<a href="login.html">Sair</a>
 </nav>
 
 </header>
@@ -24,8 +24,8 @@
 
 <section class="banner">
 
-<h1>Encontre sua próxima viagem</h1>
-<p>Passagens aéreas com os melhores preços</p>
+<h1>Bem-vindo ao SkyFly</h1>
+<p>Busque sua próxima viagem</p>
 
 <div class="busca">
 
@@ -33,9 +33,9 @@
 
 <input type="text" id="destino" placeholder="Cidade de destino">
 
-<input type="date" id="data">
+<input type="date">
 
-<select id="passageiros">
+<select>
 <option>1 Passageiro</option>
 <option>2 Passageiros</option>
 <option>3 Passageiros</option>
@@ -56,13 +56,6 @@
 <div id="listaVoos" class="cards"></div>
 
 </section>
-
-
-<footer class="footer">
-
-<p>© 2026 SkyFly - Sistema de Passagens Aéreas</p>
-
-</footer>
 
 <script src="js/script.js"></script>
 

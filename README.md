@@ -42,6 +42,15 @@ O sistema permitirá que:
 - RNF08 – O código deve ser organizado em camadas (frontend, backend e banco de dados)
 
 
+# Fluxo do sistema
+
+1. Usuário realiza cadastro
+2. Usuário faz login
+3. Sistema redireciona para o painel principal
+4. Usuário busca voos
+5. Usuário seleciona e compra passagem
+6. Usuário pode visualizar suas passagens compradas
+
 # Tecnologias 
 
 # Backend: Node.js com Express (Framework)

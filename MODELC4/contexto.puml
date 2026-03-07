@@ -1,0 +1,18 @@
+@startuml C4_Context
+!include https://raw.githubusercontent.com/RicardoNiepel/C4-PlantUML/master/C4_Context.puml
+
+title Diagrama Contexto - Sistema de Entregas Pedidos Marketplace
+
+Person(Cliente, "Cliente Marketplace", "clientes que fazem pedidos no marketplace")
+Person(Entregador, "Entregador", "Pessoas que realizam as entregas dos pedidos do marketplace")
+
+System_Boundary(Systema_entrega, "Sistema de Controle de Entregas"){
+  System(Entregas_market, "Sistema de Controle de Entregas", "Entrega de produtos comprados no marketplace, rastreável desde a origem  até a confirmação de entrega ao cliente (destino final)")
+}
+System_Ext(Transportadora, "Transportadora Marketplace", "Fornece serviços de transporte para entregas do marketplace e rastreabilidade de pedidos")
+
+
+Rel(Cliente, Entregas_market, "Acompanha entrega de seus pedidos", "App/Website")
+BiRel(Entregador, Entregas_market, "Recebe pedidos de entrega e atualiza status da entrega", "App/Website")
+BiRel(Entregas_market, Transportadora, "Envia informações de pedidos para entregas e recebe atualizações de status dessas entregas", "APIs")
+@enduml
