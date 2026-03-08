@@ -82,3 +82,15 @@ O sistema permitirá que:
 # Diagramas
 
 # Modelo C4
+
+
+
+
+
+
+
+
+
+
+<img width="667" height="673" alt="image" src="https://github.com/user-attachments/assets/180e0da9-2d1f-4589-925b-a6689933acd6" />
+
