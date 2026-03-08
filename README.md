@@ -27,7 +27,7 @@ O sistema permitirá que:
 - RF04 – O sistema deve exibir a lista de voos disponíveis conforme a pesquisa realizada.
 - RF05 – O sistema deve permitir que o usuário visualize os detalhes do voo (data, preço e assentos disponíveis).
 - RF06 – O sistema deve permitir que o usuário compre uma passagem.
-- RF07 – O sistema deve atualizar automaticamente a quantidade de assentos disponíveis após a compra.
+- RF07 – Atualizar assentos após compra
 - RF08 – O sistema deve permitir que o usuário visualize o histórico de passagens compradas.
 
 # Requisitos Não Funcionais (RNF)
