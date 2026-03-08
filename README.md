@@ -78,3 +78,7 @@ O sistema permitirá que:
 - Fácil integração com Node.js;
 - Amplamente utilizado em ambientes acadêmicos e profissionais;
 - Suporte a consultas estruturadas (SQL).
+
+# Diagramas
+
+# Modelo C4
