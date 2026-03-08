@@ -116,7 +116,7 @@ O sistema permitirá que:
 # Classe
 
 
-<img width="500" height="5523" alt="image" src="https://github.com/user-attachments/assets/f874cc90-e7cd-4386-a624-8463d1159c44" />
+<img width="450" height="5523" alt="image" src="https://github.com/user-attachments/assets/f874cc90-e7cd-4386-a624-8463d1159c44" />
 
 
 # Sequência
