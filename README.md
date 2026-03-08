@@ -87,11 +87,11 @@ O sistema permitirá que:
 
 <img width="475" height="648" alt="image" src="https://github.com/user-attachments/assets/53892e2e-c179-42e0-99af-bdc2b79e7b08" />
 
-
+#
 
 <img width="388" height="873" alt="image" src="https://github.com/user-attachments/assets/e3384a32-7181-4c3b-9884-7f393907462f" />
 
-
+#
 
 <img width="667" height="673" alt="image" src="https://github.com/user-attachments/assets/180e0da9-2d1f-4589-925b-a6689933acd6" />
 
