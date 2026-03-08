@@ -101,3 +101,14 @@ O sistema permitirá que:
 
 <img width="667" height="673" alt="image" src="https://github.com/user-attachments/assets/180e0da9-2d1f-4589-925b-a6689933acd6" />
 
+
+#
+
+
+# UML
+
+# Caso de Uso
+
+
+<img width="5130" height="6499" alt="image" src="https://github.com/user-attachments/assets/c55ba403-9fc7-4bd9-8157-6b2b7262d30e" />
+
