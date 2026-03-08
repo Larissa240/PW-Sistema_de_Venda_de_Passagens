@@ -110,19 +110,19 @@ O sistema permitirá que:
 # Caso de Uso
 
 
-<img width="530" height="6499" alt="image" src="https://github.com/user-attachments/assets/c55ba403-9fc7-4bd9-8157-6b2b7262d30e" />
+<img width="500" height="6499" alt="image" src="https://github.com/user-attachments/assets/c55ba403-9fc7-4bd9-8157-6b2b7262d30e" />
 
 
 # Classe
 
 
-<img width="530" height="5523" alt="image" src="https://github.com/user-attachments/assets/f874cc90-e7cd-4386-a624-8463d1159c44" />
+<img width="500" height="5523" alt="image" src="https://github.com/user-attachments/assets/f874cc90-e7cd-4386-a624-8463d1159c44" />
 
 
 # Sequência
 
 
-<img width="7140" height="6755" alt="image" src="https://github.com/user-attachments/assets/860e0e72-2033-4846-9991-03baa973da63" />
+<img width="500" height="6755" alt="image" src="https://github.com/user-attachments/assets/860e0e72-2033-4846-9991-03baa973da63" />
 
 
 
