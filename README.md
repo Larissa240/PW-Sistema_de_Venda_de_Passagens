@@ -110,7 +110,8 @@ O sistema permitirá que:
 # Caso de Uso
 
 
-<img width="450" height="6499" alt="image" src="https://github.com/user-attachments/assets/c55ba403-9fc7-4bd9-8157-6b2b7262d30e" />
+<img width="526" height="521" alt="diagrama_caso_uso" src="https://github.com/user-attachments/assets/39b16331-a043-4e5e-8a82-65c1905aa2db" />
+
 
 
 # Classe
