@@ -1,0 +1,22 @@
+@startuml
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+title Diagrama Container - Sistema de Passagens Aéreas
+
+Person(usuario, "Usuário", "Pessoa que compra passagens")
+
+System_Boundary(sistema_passagens, "Sistema de Passagens Aéreas") {
+
+Container(frontend, "Frontend Web", "HTML, CSS, JavaScript", "Interface que permite buscar voos e comprar passagens")
+
+Container(backend, "API Backend", "Node.js + Express", "Processa regras de negócio e compras")
+
+ContainerDb(database, "Banco de Dados", "MySQL", "Armazena usuários, voos e passagens")
+
+}
+
+Rel(usuario, frontend, "Acessa pelo navegador")
+Rel(frontend, backend, "Requisições HTTP")
+Rel(backend, database, "Consulta e grava dados")
+
+@enduml

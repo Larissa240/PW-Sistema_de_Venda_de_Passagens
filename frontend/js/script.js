@@ -3,35 +3,35 @@ const voos = [
 {
 origem:"Joinville",
 destino:"São Luís",
-preco:1000,
+preco:"1.000",
 assentos:5
 },
 
 {
 origem:"São Paulo",
 destino:"Rio de Janeiro",
-preco:350,
+preco:"350,00",
 assentos:4
 },
 
 {
 origem:"Curitiba",
 destino:"Florianópolis",
-preco:200,
+preco:"200,00",
 assentos:6
 },
 
 {
 origem:"São Paulo",
 destino:"Salvador",
-preco:850,
+preco:"850,00",
 assentos:3
 },
 
 {
 origem:"Joinville",
 destino:"Brasília",
-preco:700,
+preco:"700,00",
 assentos:2
 }
 
