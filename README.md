@@ -27,7 +27,7 @@ O sistema permitirá que:
 - RF04 – O sistema deve exibir a lista de voos disponíveis conforme a pesquisa realizada.
 - RF05 – O sistema deve permitir que o usuário visualize os detalhes do voo (data, preço e assentos disponíveis).
 - RF06 – O sistema deve permitir que o usuário compre uma passagem.
-- RF07 – O sistema deve atualizar automaticamente a quantidade de assentos disponíveis após a compra.
+- RF07 – Atualizar assentos após compra
 - RF08 – O sistema deve permitir que o usuário visualize o histórico de passagens compradas.
 
 # Requisitos Não Funcionais (RNF)
@@ -78,3 +78,53 @@ O sistema permitirá que:
 - Fácil integração com Node.js;
 - Amplamente utilizado em ambientes acadêmicos e profissionais;
 - Suporte a consultas estruturadas (SQL).
+
+# Diagramas
+
+# Modelo C4
+
+#
+
+
+
+<img width="475" height="648" alt="image" src="https://github.com/user-attachments/assets/53892e2e-c179-42e0-99af-bdc2b79e7b08" />
+
+
+
+#
+
+<img width="388" height="873" alt="image" src="https://github.com/user-attachments/assets/e3384a32-7181-4c3b-9884-7f393907462f" />
+
+
+
+#
+
+<img width="667" height="673" alt="image" src="https://github.com/user-attachments/assets/180e0da9-2d1f-4589-925b-a6689933acd6" />
+
+
+#
+
+
+# UML
+
+# Caso de Uso
+
+
+<img width="526" height="521" alt="diagrama_caso_uso" src="https://github.com/user-attachments/assets/5ed5f367-ac3c-418b-8836-11f08c5e328c" />
+
+
+
+
+# Classe
+
+
+<img width="250" height="5523" alt="image" src="https://github.com/user-attachments/assets/f874cc90-e7cd-4386-a624-8463d1159c44" />
+
+
+# Sequência
+
+
+<img width="500" height="6755" alt="image" src="https://github.com/user-attachments/assets/860e0e72-2033-4846-9991-03baa973da63" />
+
+
+
