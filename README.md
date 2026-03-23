@@ -127,4 +127,53 @@ O sistema permitirá que:
 <img width="500" height="6755" alt="image" src="https://github.com/user-attachments/assets/860e0e72-2033-4846-9991-03baa973da63" />
 
 
+# Estrutura do Banco
+
+O banco de dados é composto pelas seguintes tabelas:
+
+# Usuario
+
+Armazena os dados dos usuários do sistema:
+
+- id (PK);
+- nome;
+- email;
+- senha;
+
+# Voo
+
+Armazena os voos disponíveis:
+
+- id (PK);
+- origem;
+- destino;
+- data;
+- preco;
+- assentos_disponiveis;
+
+# Passagem
+
+Relaciona usuários aos voos:
+
+- id (PK);
+- usuario_id (FK);
+- voo_id (FK);
+- data_compra;
+
+# Pagamento
+
+Responsável pelo controle financeiro:
+
+- id (PK);
+- passagem_id (FK);
+- valor;
+- status;
+- data_pagamento;
+
+# Relacionamentos
+- Um usuário pode possuir várias passagens
+- Um voo pode possuir várias passagens
+- Cada passagem possui um pagamento
+
+
 
