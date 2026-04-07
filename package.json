@@ -1,9 +1,10 @@
 {
   "name": "pw-sistema_de_venda_de_passagens",
   "version": "1.0.0",
-  "description": "Atualmente, a compra de passagens aéreas exige sistemas que organizem informações como voos disponíveis, quantidade de assentos, dados dos passageiros e registros de pagamento. \r Sem um sistema informatizado: O controle de assentos pode gerar overbooking (venda acima da capacidade), O registro manual de passageiros pode causar erros, A consulta de voos se torna lenta e desorganizada e\r não há controle eficiente do histórico de compras. Dessa forma, existe a necessidade de um sistema que permita organizar, automatizar e controlar o processo de venda de passagens aéreas, garantindo maior confiabilidade e agilidade.",
-  "main": "index.js",
+  "description": "Backend para o sistema de venda de passagens aéreas SkyFly.",
+  "main": "backend/server.js",
   "scripts": {
+    "start": "node backend/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,9 +20,12 @@
   },
   "homepage": "https://github.com/Larissa240/PW-Sistema_de_Venda_de_Passagens#readme",
   "dependencies": {
-    "body-parser": "^2.2.2",
-    "cors": "^2.8.6",
-    "express": "^5.2.1",
-    "mysql2": "^3.20.0"
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.9.7"
   }
 }
