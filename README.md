@@ -175,5 +175,38 @@ Responsável pelo controle financeiro:
 - Um voo pode possuir várias passagens
 - Cada passagem possui um pagamento
 
+# Como Executar o Projeto
+
+# Pré-requisitos
+
+- Node.js instalado
+-  MySQL instalado
+
+# Passos
+
+Clonar o repositório:
+
+git clone https://github.com/seu-repositorio.git
+
+# Acessar a pasta do projeto:
+
+cd nome-do-projeto
+
+# Instalar dependências:
+
+npm install
+
+# Configurar o banco de dados:
+
+Criar o banco no MySQL
+Executar o arquivo script.sql
+
+# Iniciar o servidor:
+
+npm start
+
+# Acessar no navegador:
+
+http://localhost:3000
 
 
