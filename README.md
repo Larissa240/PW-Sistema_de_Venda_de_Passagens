@@ -186,11 +186,11 @@ Responsável pelo controle financeiro:
 
 Clonar o repositório:
 
-git clone https://github.com/seu-repositorio.git
+git clone https://github.com/Larissa240/PW-Sistema_de_Venda_de_Passagens.git
 
 # Acessar a pasta do projeto:
 
-cd nome-do-projeto
+cd PW-SISTEMA_DE_VENDA_DE_PASSAGENS
 
 # Instalar dependências:
 
