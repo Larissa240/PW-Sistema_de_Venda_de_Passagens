@@ -4,6 +4,11 @@ const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const pool = require("../db");
 
+// Rota de teste para verificar o status do backend
+router.get("/status", (req, res) => {
+  res.status(200).json({ message: "Backend SkyFly está online e a rota /api/status funciona!" });
+});
+
 // Middleware para verificar o token JWT
 const authenticateToken = (req, res, next) => {
   const authHeader = req.headers["authorization"];
