@@ -175,38 +175,7 @@ Responsável pelo controle financeiro:
 - Um voo pode possuir várias passagens
 - Cada passagem possui um pagamento
 
-# Como Executar o Projeto
 
-# Pré-requisitos
 
-- Node.js instalado
--  MySQL instalado
-
-# Passos
-
-Clonar o repositório:
-
-git clone https://github.com/Larissa240/PW-Sistema_de_Venda_de_Passagens.git
-
-# Acessar a pasta do projeto:
-
-cd PW-SISTEMA_DE_VENDA_DE_PASSAGENS
-
-# Instalar dependências:
-
-npm install
-
-# Configurar o banco de dados:
-
-Criar o banco no MySQL
-Executar o arquivo script.sql
-
-# Iniciar o servidor:
-
-npm start
-
-# Acessar no navegador:
-
-http://localhost:3000
 
 
