@@ -119,13 +119,13 @@ O sistema permitirá que:
 
 # Classe
 
-<img width="250" height="5523" alt="image" src="https://github.com/user-attachments/assets/f874cc90-e7cd-4386-a624-8463d1159c44" />
+<img width="500" height="723" alt="image" src="https://github.com/user-attachments/assets/f874cc90-e7cd-4386-a624-8463d1159c44" />
 
 
 # Sequência
 
 
-<img width="500" height="6755" alt="image" src="https://github.com/user-attachments/assets/860e0e72-2033-4846-9991-03baa973da63" />
+<img width="1000" height="755" alt="image" src="https://github.com/user-attachments/assets/860e0e72-2033-4846-9991-03baa973da63" />
 
 
 # Estrutura do Banco
