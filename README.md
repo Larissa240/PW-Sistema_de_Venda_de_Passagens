@@ -1,6 +1,7 @@
 
 # Sistema de Venda de Passagens Aéreas
 
+
 # Situação do Problema
 
 Atualmente, a compra de passagens aéreas exige sistemas que organizem informações como voos disponíveis, quantidade de assentos, dados dos passageiros e registros de pagamento. 
