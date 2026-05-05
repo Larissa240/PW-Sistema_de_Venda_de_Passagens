@@ -1,0 +1,196 @@
+body{
+font-family: Arial;
+margin:0;
+background:#f4f6f9;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:#2c3e50;
+color:white;
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+}
+
+nav a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+}
+
+.banner{
+background:linear-gradient(120deg,#4b6cb7,#6a11cb);
+padding:80px;
+text-align:center;
+color:white;
+}
+
+.banner h1{
+margin-bottom:30px;
+}
+
+.busca{
+background:white;
+padding:20px;
+border-radius:10px;
+display:inline-block;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.busca input{
+padding:10px;
+margin:5px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+.busca button{
+padding:10px 20px;
+background:#6a11cb;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+.voos{
+padding:40px;
+text-align:center;
+}
+
+.cards{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:20px;
+}
+
+.card{
+background:rgb(248, 244, 244);
+padding:20px;
+border-radius:10px;
+width:250px;
+box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+
+.card button{
+background:#4b6cb7;
+color:white;
+border:none;
+padding:10px;
+width:100%;
+border-radius:5px;
+cursor:pointer;
+}
+
+/* ===== LOGIN E CADASTRO ===== */
+
+.auth-container{
+display:flex;
+justify-content:center;
+align-items:center;
+height:80vh;
+}
+
+.auth-card{
+background:white;
+padding:40px;
+border-radius:12px;
+width:320px;
+box-shadow:0 8px 20px rgba(0,0,0,0.2);
+text-align:center;
+}
+
+.auth-card h2{
+margin-bottom:20px;
+}
+
+.auth-card input{
+width:100%;
+padding:12px;
+margin:10px 0;
+border-radius:6px;
+border:1px solid #ccc;
+box-sizing:border-box;
+}
+
+.auth-card button{
+width:100%;
+padding:12px;
+background:#6a11cb;
+color:white;
+border:none;
+border-radius:6px;
+font-size:16px;
+cursor:pointer;
+}
+
+.auth-card button:hover{
+background:#4b6cb7;
+}
+
+.auth-card a{
+color:#6a11cb;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* ===== FOOTER ===== */
+
+.footer{
+background:#2c3e50;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+/* ===== MELHORIAS VISUAIS ===== */
+
+.banner p{
+font-size:18px;
+margin-bottom:25px;
+}
+
+.card:hover{
+transform:scale(1.03);
+transition:0.3s;
+}
+
+.busca input{
+width:150px;
+}
+
+.busca button:hover{
+background:#4b6cb7;
+}
+
+/* ===== MELHORIAS DE BUSCA DE PASSAGEM ===== */
+
+.busca select{
+padding:10px;
+margin:5px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+.card h2{
+color:#6a11cb;
+margin:10px 0;
+font-size:24px;
+}
+
+.card p{
+margin:5px 0;
+}
+
+.card button{
+margin-top:10px;
+font-weight:bold;
+}

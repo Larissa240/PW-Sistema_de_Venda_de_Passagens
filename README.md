@@ -1,3 +1,4 @@
+ HEAD
 # Sistema de Venda de Passagens Aéreas
 
 # Situação do Problema
@@ -179,3 +180,211 @@ Responsável pelo controle financeiro:
 
 
 
+=======
+# Sistema de Venda de Passagens Aéreas
+
+# Situação do Problema
+
+Atualmente, a compra de passagens aéreas exige sistemas que organizem informações como voos disponíveis, quantidade de assentos, dados dos passageiros e registros de pagamento. 
+Sem um sistema informatizado: O controle de assentos pode gerar overbooking (venda acima da capacidade), O registro manual de passageiros pode causar erros, A consulta de voos se torna lenta e desorganizada e
+não há controle eficiente do histórico de compras. Dessa forma, existe a necessidade de um sistema que permita organizar, automatizar e controlar o processo de venda de passagens aéreas, garantindo maior confiabilidade e agilidade.
+
+# Resumo da Solucão 
+
+Um sistema web simples para venda de passagens aéreas.
+
+O sistema permitirá que:
+
+- Usuários se cadastrem e realizem login;
+- Pesquisem voos por origem e destino;
+- Visualizem voos disponíveis;
+- Comprem passagens;
+- O sistema controle automaticamente a quantidade de assentos disponíveis;
+- Usuários consultem suas compras realizadas.
+
+# Requisitos Funcionais (RF)
+
+- RF01 – O sistema deve permitir o cadastro de usuário informando nome, e-mail e senha.
+- RF02 – O sistema deve permitir que o usuário realize login utilizando e-mail e senha.
+- RF03 – O sistema deve permitir que o usuário pesquise voos informando origem e destino.
+- RF04 – O sistema deve exibir a lista de voos disponíveis conforme a pesquisa realizada.
+- RF05 – O sistema deve permitir que o usuário visualize os detalhes do voo (data, preço e assentos disponíveis).
+- RF06 – O sistema deve permitir que o usuário compre uma passagem.
+- RF07 – Atualizar assentos após compra
+- RF08 – O sistema deve permitir que o usuário visualize o histórico de passagens compradas.
+
+# Requisitos Não Funcionais (RNF)
+
+- RNF01 – O sistema deve ser acessível por meio de navegador web.
+- RNF02 – O sistema deve possuir autenticação de usuários.
+- RNF03 – O tempo de resposta das requisições deve ser inferior a 3 segundos.
+- RNF04 – O sistema deve armazenar os dados em banco de dados relacional (MySQL).
+- RNF05 – O sistema deve utilizar arquitetura baseada em API REST.
+- RNF06 – O sistema deve possuir interface simples e intuitiva.
+- RNF07 – O sistema deve garantir integridade dos dados através do uso de chaves primárias e estrangeiras.
+- RNF08 – O código deve ser organizado em camadas (frontend, backend e banco de dados)
+
+
+# Fluxo do sistema
+
+1. Usuário realiza cadastro
+2. Usuário faz login
+3. Sistema redireciona para o painel principal
+4. Usuário busca voos
+5. Usuário seleciona e compra passagem
+6. Usuário pode visualizar suas passagens compradas
+
+# Tecnologias 
+
+# Backend: Node.js com Express (Framework)
+
+- O Express facilita a criação de APIs REST de forma simples e organizada;
+- Permite estruturar rotas, controladores e regras de negócio;
+- É leve e eficiente para aplicações web;
+- Possui grande comunidade e ampla documentação;
+- É amplamente utilizado no mercado de desenvolvimento web;
+- Adequado para projetos acadêmicos por sua simplicidade e rapidez de implementação.
+
+# Frontend: HTML, CSS e JavaScript
+
+- Simplicidade na implementação;
+- Fácil integração com o backend desenvolvido em Node.js;
+- Não exige configuração complexa;
+- Permite foco nas funcionalidades do sistema;
+- Ideal para projeto individual e acadêmico;
+- Garante melhor domínio do código desenvolvido.
+
+# Banco de Dados: MySQL
+
+- Modelo relacional adequado para controle de usuários, voos e passagens;
+- Permite uso de chaves primárias e estrangeiras garantindo integridade dos dados;
+- Fácil integração com Node.js;
+- Amplamente utilizado em ambientes acadêmicos e profissionais;
+- Suporte a consultas estruturadas (SQL).
+
+# Diagramas
+
+# Modelo C4
+
+#
+
+
+
+<img width="475" height="648" alt="image" src="https://github.com/user-attachments/assets/53892e2e-c179-42e0-99af-bdc2b79e7b08" />
+
+
+
+#
+
+<img width="388" height="873" alt="image" src="https://github.com/user-attachments/assets/e3384a32-7181-4c3b-9884-7f393907462f" />
+
+
+
+#
+
+<img width="667" height="673" alt="image" src="https://github.com/user-attachments/assets/180e0da9-2d1f-4589-925b-a6689933acd6" />
+
+
+#
+
+
+# UML
+
+# Caso de Uso
+
+
+<img width="526" height="521" alt="diagrama_caso_uso" src="https://github.com/user-attachments/assets/5ed5f367-ac3c-418b-8836-11f08c5e328c" />
+
+
+
+
+# Classe
+
+
+<img width="250" height="5523" alt="image" src="https://github.com/user-attachments/assets/f874cc90-e7cd-4386-a624-8463d1159c44" />
+
+
+# Sequência
+
+
+<img width="500" height="6755" alt="image" src="https://github.com/user-attachments/assets/860e0e72-2033-4846-9991-03baa973da63" />
+
+
+# Estrutura do Banco
+
+O banco de dados é composto pelas seguintes tabelas:
+
+# Usuario
+
+Armazena os dados dos usuários do sistema:
+
+- id (PK);
+- nome;
+- email;
+- senha;
+
+# Voo
+
+Armazena os voos disponíveis:
+
+- id (PK);
+- origem;
+- destino;
+- data;
+- preco;
+- assentos_disponiveis;
+
+# Passagem
+
+Relaciona usuários aos voos:
+
+- id (PK);
+- usuario_id (FK);
+- voo_id (FK);
+- data_compra;
+
+# Pagamento
+
+Responsável pelo controle financeiro:
+
+- id (PK);
+- passagem_id (FK);
+- valor;
+- status;
+- data_pagamento;
+
+# Relacionamentos
+- Um usuário pode possuir várias passagens
+- Um voo pode possuir várias passagens
+- Cada passagem possui um pagamento
+
+
+# CI/CD do SkyFly
+
+- `.github/workflows/ci-cd.yml` para integração contínua e para build e publicação da imagem no GHCR
+
+## Pipeline de CI
+
+Esse fluxo garante que a aplicação esteja válida antes de ser integrada. Os workflows do GitHub Actions podem ser disparados automaticamente por eventos como `push` e `pull_request`.
+
+## Pipeline de CD
+
+A pipeline de CD pode ser usada para:
+
+1. build da imagem Docker
+2. push para `ghcr.io/<owner>/skyfly`
+
+Neste projeto, o deploy final da aplicação não depende de VPS. Em vez disso, a publicação pode ser feita no Render, conectando o repositório a uma branch de deploy. O Render permite vincular uma branch e, por padrão, reconstruir e redeployar automaticamente a cada push ou merge nessa branch.
+
+
+## Como usar localmente
+
+```bash
+cp .env.example .env
+npm install
+npm run check:syntax
+npm test 
+npm start
+```
+
+724d3fc (feat: adicionando workflow de CI/CD e atualizando o README)

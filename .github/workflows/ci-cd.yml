@@ -1,0 +1,90 @@
+name: CI/CD
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-cd-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  ci-cd:
+    name: Build, test and validate
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      # Baixa o código do repositório para o runner
+      - name: Checkout do código
+        uses: actions/checkout@v4
+
+      # Configura o Node.js com cache de dependências do npm
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      # Instala as dependências do projeto
+      - name: Instalar dependências
+        run: npm install
+
+      # Validação opcional de sintaxe, executada apenas se o script existir
+      - name: Validar sintaxe
+        run: npm run check:syntax --if-present
+
+      # Executa testes apenas se o script "test" existir no package.json
+      - name: Executar testes
+        shell: bash
+        run: |
+          if node -e "const p=require('./package.json'); process.exit(p.scripts && p.scripts.test ? 0 : 1)"; then
+            echo "Script de teste encontrado. Executando npm test..."
+            npm test
+          else
+            echo "Nenhum script de teste encontrado. Etapa ignorada sem falhar o pipeline."
+          fi
+
+      # Sobe a aplicação rapidamente para confirmar que ela inicia corretamente
+      - name: Validar inicialização da aplicação
+        shell: bash
+        env:
+          PORT: 3000
+          JWT_SECRET: ci-secret
+          DB_HOST: 127.0.0.1
+          DB_USER: root
+          DB_PASSWORD: password
+          DB_NAME: sistema_passagens
+        run: |
+          if node -e "const p=require('./package.json'); process.exit(p.scripts && p.scripts.start ? 0 : 1)"; then
+            echo "Script start encontrado. Iniciando aplicação para validação rápida..."
+            npm start &
+            APP_PID=$!
+
+            cleanup() {
+              if kill -0 "$APP_PID" 2>/dev/null; then
+                kill "$APP_PID"
+                wait "$APP_PID" || true
+              fi
+            }
+
+            trap cleanup EXIT
+
+            for i in {1..20}; do
+              if curl -fsS "http://127.0.0.1:${PORT}/health" > /dev/null; then
+                echo "Aplicação respondeu com sucesso no endpoint /health."
+                exit 0
+              fi
+              sleep 2
+            done
+
+            echo "A aplicação não respondeu a tempo durante a validação."
+            exit 1
+          else
+            echo "Nenhum script start encontrado. Etapa ignorada sem falhar o pipeline."
+          fi

@@ -6,7 +6,7 @@ const pool = require("../db");
 
 // Rota de teste para verificar o status do backend
 router.get("/status", (req, res) => {
-  res.status(200).json({ message: "Backend SkyFly está online e a rota /api/status funciona!" });
+  res.status(200).json({ message: "Backend SkyFly está online /api/status funciona!" });
 });
 
 // Middleware para verificar o token JWT
@@ -43,6 +43,10 @@ router.post("/usuarios/cadastro", async (req, res) => {
     console.error("Erro ao cadastrar usuário:", error);
     res.status(500).json({ message: "Erro interno do servidor." });
   }
+});
+
+router.get("/login", (req, res) => {
+  res.send("Rota de login OK");
 });
 
 // Rota de Login de Usuário
