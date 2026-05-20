@@ -1,0 +1,32 @@
+@startuml
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+title Diagrama de Componentes - Sistema de Passagens Aéreas
+
+Container_Boundary(api_backend, "Backend API - Node.js / Express") {
+
+Component(auth_controller, "Auth Controller", "Express", "Gerencia cadastro e login de usuários")
+
+Component(voo_controller, "Voo Controller", "Express", "Responsável pela busca e listagem de voos")
+
+Component(compra_controller, "Compra Controller", "Express", "Gerencia compra de passagens")
+
+Component(usuario_service, "Usuario Service", "Node.js", "Regras de negócio dos usuários")
+
+Component(voo_service, "Voo Service", "Node.js", "Regras de busca e disponibilidade de voos")
+
+Component(compra_service, "Compra Service", "Node.js", "Processa compras e atualização de assentos")
+
+ComponentDb(database, "Banco de Dados", "MySQL", "Armazena usuários, voos e passagens")
+
+}
+
+Rel(auth_controller, usuario_service, "Usa")
+Rel(voo_controller, voo_service, "Usa")
+Rel(compra_controller, compra_service, "Usa")
+
+Rel(usuario_service, database, "Lê/Grava")
+Rel(voo_service, database, "Consulta")
+Rel(compra_service, database, "Atualiza")
+
+@enduml

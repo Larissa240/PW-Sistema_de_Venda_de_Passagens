@@ -1,0 +1,20 @@
+@startuml
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+
+title Diagrama de Contexto - Sistema de Venda de Passagens Aéreas
+
+Person(usuario, "Usuário", "Pessoa que compra passagens")
+
+System_Boundary(sistema_passagens, "Sistema de Venda de Passagens Aéreas") {
+    System(passagens, "Sistema de Passagens", "Sistema web para busca de voos e compra de passagens")
+}
+
+System_Ext(companhia, "Companhia Aérea", "Fornece dados de voos")
+
+System_Ext(pagamento, "Sistema de Pagamento", "Processa pagamentos")
+
+Rel(usuario, passagens, "Busca voos e compra passagens", "Web")
+Rel(passagens, companhia, "Consulta voos disponíveis", "API")
+Rel(passagens, pagamento, "Processa pagamento", "API")
+
+@enduml
