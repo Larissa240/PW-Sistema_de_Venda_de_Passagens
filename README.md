@@ -45,12 +45,35 @@ O sistema permitirá que:
 
 # Fluxo do sistema
 
-1. Usuário realiza cadastro
-2. Usuário faz login
-3. Sistema redireciona para o painel principal
-4. Usuário busca voos
-5. Usuário seleciona e compra passagem
-6. Usuário pode visualizar suas passagens compradas
+1. Usuário realiza cadastro;
+2. Usuário faz login;
+3. Sistema redireciona para o painel principal;
+4. Usuário busca voos;
+5. Sistema exibe voos disponíveis;
+6. Usuário seleciona quantidade de passageiros;
+7. Sistema calcula automaticamente o valor total;
+8. Usuário confirma a compra;
+9. Sistema atualiza os assentos disponíveis;
+10. Caso os assentos acabem, o sistema exibe “Voo Lotado”;
+11. Usuário pode visualizar suas passagens compradas no histórico.
+
+# Funcionalidades Implementadas
+- Cadastro de usuário integrado ao backend e MySQL;
+- Redirecionamento automático para o painel após login;
+- Cadastro com validação de campos;
+- Validação de senha mínima;
+- Bloqueio de e-mail duplicado;
+- Login com validação real de e-mail e senha;
+- Proteção de rotas privadas;
+- Logout funcional;
+- Busca de voos por origem e destino;
+- Preço dinâmico por número de passageiros;
+- Cálculo automático do valor total para 2, 3 ou 4 passageiros;
+- Data real preenchida automaticamente;
+- Confirmação de compra com todos os detalhes;
+- Desconto automático de assentos após compra;
+- Exibição do botão “Voo Lotado” quando não houver assentos;
+- Histórico completo de passagens compradas.
 
 # Tecnologias 
 
@@ -205,4 +228,16 @@ npm test
 npm start
 ```
 
-724d3fc (feat: adicionando workflow de CI/CD e atualizando o README)
+# Objetivo do Projeto
+
+O objetivo do projeto SkyFly é desenvolver um sistema web simples, funcional e seguro para gerenciamento de venda de passagens aéreas, aplicando conceitos de:
+
+- Desenvolvimento Full Stack;
+- API REST;
+- Banco de Dados Relacional;
+- Autenticação JWT;
+- Integração Frontend e Backend;
+- Controle de Sessão;
+- Organização em Camadas;
+- CI/CD;
+= Versionamento com Git e GitHub.
