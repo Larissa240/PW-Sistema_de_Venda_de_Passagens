@@ -228,16 +228,3 @@ npm test
 npm start
 ```
 
-# Objetivo do Projeto
-
-O objetivo do projeto SkyFly é desenvolver um sistema web simples, funcional e seguro para gerenciamento de venda de passagens aéreas, aplicando conceitos de:
-
-- Desenvolvimento Full Stack;
-- API REST;
-- Banco de Dados Relacional;
-- Autenticação JWT;
-- Integração Frontend e Backend;
-- Controle de Sessão;
-- Organização em Camadas;
-- CI/CD;
-= Versionamento com Git e GitHub.
