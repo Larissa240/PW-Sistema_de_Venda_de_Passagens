@@ -4,7 +4,7 @@
 # Situação do Problema
 
 Atualmente, a compra de passagens aéreas exige sistemas que organizem informações como voos disponíveis, quantidade de assentos, dados dos passageiros e registros de pagamento. 
-Sem um sistema informatizado: O controle de assentos pode gerar overbooking (venda acima da capacidade), O registro manual de passageiros pode causar erros, A consulta de voos se torna lenta e desorganizada e
+Sem um sistema informatizado: O controle de assentos pode gerar overbooking (venda acima da capacidade), O registro manual de passageiros pode causar erros, a consulta de voos se torna lenta e desorganizada e
 não há controle eficiente do histórico de compras. Dessa forma, existe a necessidade de um sistema que permita organizar, automatizar e controlar o processo de venda de passagens aéreas, garantindo maior confiabilidade e agilidade.
 
 # Resumo da Solucão 
