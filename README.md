@@ -35,7 +35,7 @@ O sistema permitirá que:
 
 - RNF01 – O sistema deve ser acessível por meio de navegador web.
 - RNF02 – O sistema deve possuir autenticação de usuários.
-- RNF03 – O tempo de resposta das requisições deve ser inferior a 3 segundos.
+- RNF03 – O sistema deve apresentar respostas adequadas para consultas e operações comuns.
 - RNF04 – O sistema deve armazenar os dados em banco de dados relacional (MySQL).
 - RNF05 – O sistema deve utilizar arquitetura baseada em API REST.
 - RNF06 – O sistema deve possuir interface simples e intuitiva.
@@ -195,36 +195,29 @@ Responsável pelo controle financeiro:
 - data_pagamento;
 
 # Relacionamentos
-- Um usuário pode possuir várias passagens
-- Um voo pode possuir várias passagens
-- Cada passagem possui um pagamento
+- Um usuário pode possuir várias passagens.
+- Um voo pode possuir várias passagens.
+- Cada compra gera um registro de pagamento associado à operação realizada.
 
 
-# CI/CD do SkyFly
+# Integração Contínua
 
-- `.github/workflows/ci-cd.yml` para integração contínua e para build e publicação da imagem no GHCR
+O projeto possui estrutura preparada para automação utilizando GitHub Actions.
 
-## Pipeline de CI
+Foi configurado um workflow na pasta .github/workflows, permitindo a execução automática de validações sempre que alterações forem enviadas ao repositório.
 
-Esse fluxo garante que a aplicação esteja válida antes de ser integrada. Os workflows do GitHub Actions podem ser disparados automaticamente por eventos como `push` e `pull_request`.
-
-## Pipeline de CD
-
-A pipeline de CD pode ser usada para:
-
-1. build da imagem Docker
-2. push para `ghcr.io/<owner>/skyfly`
-
-Neste projeto, o deploy final da aplicação não depende de VPS. Em vez disso, a publicação pode ser feita no Render, conectando o repositório a uma branch de deploy. O Render permite vincular uma branch e, por padrão, reconstruir e redeployar automaticamente a cada push ou merge nessa branch.
+Essa configuração segue boas práticas de desenvolvimento de software e auxilia na organização e manutenção do projeto.
 
 
-## Como usar localmente
+# Escopo Implementado
 
-```bash
-cp .env.example .env
-npm install
-npm run check:syntax
-npm test 
-npm start
-```
+Funcionalidades concluídas:
+
+- Cadastro de usuários
+- Login com autenticação JWT
+- Busca de voos
+- Compra de passagens
+- Controle de assentos
+- Histórico de compras
+
 
