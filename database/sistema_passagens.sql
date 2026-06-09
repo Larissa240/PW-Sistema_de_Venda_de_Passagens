@@ -22,7 +22,7 @@ INSERT INTO `usuario` (`id`, `nome`, `email`, `senha`) VALUES
 (5, 'Alice Pereira da Silva', 'alice@gmail.com', '$2a$10$s.fRBnkX8jSUpTUkTzq8WOdBxy0UYiDOeMXnLe9hQbkUHdmEGoEba');
 
 -- Tabela de voos
-CCREATE TABLE `voo` (
+CREATE TABLE `voo` (
   `id` int(11) NOT NULL,
   `origem` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `destino` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
